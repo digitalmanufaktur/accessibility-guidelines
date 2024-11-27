@@ -1,0 +1,2 @@
+# Beitragen
+Erfahre, wie du aktiv zum Wachstum und zur Verbesserung dieser Guidelines beitragen kannst. Dein Engagement ist wichtig für die kontinuierliche Verbesserung unserer Barrierefreiheits-Standards.
