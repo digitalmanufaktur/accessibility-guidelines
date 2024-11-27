@@ -1,0 +1,44 @@
+:root{
+    --vp-c-accent: #3333FF;
+    --vp-c-bg: #F2F0EE;
+    --vp-c-accent-bg: #3333FF;
+    --vp-c-accent-hover: #4274FF;
+}
+
+[data-theme='dark'] {
+    --vp-c-accent: #6E9EFF;
+    --vp-c-bg: #0c0c0c;
+    --vp-c-accent-bg: #6E9EFF;
+    --vp-c-accent-hover: #BBD0FF;
+    --vp-c-gutter: #313A4E;
+}
+  
+[data-theme='light'] {
+    --vp-c-accent: #3333FF;
+    --vp-c-bg: #F2F0EE;
+    --vp-c-gutter: #CCCCE8;
+}
+
+.route-link { 
+    display: flex;
+    align-items: center;
+
+    .vp-site-name{
+        font-weight: 900;
+        //color: var(--vp-c-accent);
+    }
+
+    .vp-site-logo {
+        margin-right: 32px; // Hier kannst du den Abstand anpassen
+        max-height: 28px;
+    }
+}
+
+h2{
+    padding-bottom: .55em;
+}
+
+.theme-default-content h1, .theme-default-content h2, .theme-default-content h3, .theme-default-content h4, .theme-default-content h5, .theme-default-content h6{
+    margin-top: calc(1.2rem - var(--header-offset));
+    margin-bottom: 1.2rem;
+}

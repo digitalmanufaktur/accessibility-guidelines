@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.18",
+    "@vuepress/theme-default": "^2.0.0-rc.61",
+    "vuepress": "^2.0.0-rc.18"
+  },
+  "dependencies": {
+    "sass": "^1.81.0"
+  }
+}
