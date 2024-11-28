@@ -11,12 +11,34 @@
     --vp-c-accent-bg: #6E9EFF;
     --vp-c-accent-hover: #BBD0FF;
     --vp-c-gutter: #313A4E;
+    .note{
+        border: 1px solid #3f3f3f;
+    }
+    
+    .warning{
+        border: 1px solid #4b4417
+    }
+    
+    .info{
+        border: 1px solid #3f4b4e;
+    }
 }
   
 [data-theme='light'] {
     --vp-c-accent: #3333ff;
     --vp-c-bg: #F2F0EE;
     --vp-c-gutter: #CCCCE8;
+    .note{
+        border: 1px solid #cdcdcd;
+    }
+    
+    .warning{
+        border: 1px solid #e5d25a
+    }
+    
+    .info{
+        border: 1px solid #afd4dc;
+    }
 }
 
 .route-link { 
@@ -24,7 +46,7 @@
     align-items: center;
 
     .vp-site-name{
-        font-weight: 900;
+        font-weight: 800;
         //color: var(--vp-c-accent);
     }
 
@@ -32,6 +54,18 @@
         margin-right: 32px; // Hier kannst du den Abstand anpassen
         max-height: 28px;
     }
+}
+
+h1, h1 > a{
+    font-weight: 800;
+}
+
+h2, h2 > a{
+    font-weight: 700;
+}
+
+h3, h3 > a{
+    font-weight: 600;
 }
 
 h2{
@@ -42,3 +76,4 @@ h2{
     margin-top: calc(1.2rem - var(--header-offset));
     margin-bottom: 1.2rem;
 }
+

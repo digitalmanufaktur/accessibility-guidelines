@@ -1,6 +1,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance"
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -17,6 +18,7 @@ export default defineUserConfig({
         text: 'Komponenten', 
         link: '/component-pattern/',
         children: [
+          '/component-pattern/benefit-bar.md',
           '/component-pattern/buttons.md',
           '/component-pattern/carousels.md',
           '/component-pattern/forms.md',
@@ -52,6 +54,7 @@ export default defineUserConfig({
           collapsible: true,
           children: [
             '/component-pattern/readme.md',
+            '/component-pattern/benefit-bar.md',
             '/component-pattern/buttons.md',
             '/component-pattern/carousels.md',
             '/component-pattern/forms.md',
@@ -74,21 +77,22 @@ export default defineUserConfig({
         }
       ]
     },
-    // Weitere Theme-Konfigurationen
     editLink: false,
     lastUpdated: true,
     contributors: true,
     docsDir: 'docs',
     docsBranch: 'main',
-    // Spracheinstellungen
     selectLanguageName: 'Deutsch',
     selectLanguageText: 'Sprachen',
     selectLanguageAriaLabel: 'Sprachen',
-    // Sucheinstellungen
     search: true,
     searchMaxSuggestions: 10,
   }),
-  // Weitere allgemeine Konfigurationen
+  plugins: [
+    mdEnhancePlugin({
+      tasklist: true,
+    }),
+  ],
   head: [
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
