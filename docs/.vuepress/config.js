@@ -19,7 +19,7 @@ export default defineUserConfig({
         link: '/component-pattern/',
         children: [
           '/component-pattern/benefit-bar.md',
-          '/component-pattern/buttons.md',
+          '/component-pattern/buttons/readme.md',
           '/component-pattern/carousels.md',
           '/component-pattern/forms.md',
           '/component-pattern/menus.md',
@@ -55,7 +55,14 @@ export default defineUserConfig({
           children: [
             '/component-pattern/readme.md',
             '/component-pattern/benefit-bar.md',
-            '/component-pattern/buttons.md',
+            { 
+              text: 'Buttons', 
+              link: '/component-pattern/buttons/readme.md',
+              collapsible: true,
+              children: [
+                '/component-pattern/buttons/menu-button/account-menu-button.md'
+              ]
+            },
             '/component-pattern/carousels.md',
             '/component-pattern/forms.md',
             '/component-pattern/menus.md',
