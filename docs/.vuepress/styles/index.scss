@@ -22,6 +22,18 @@
     .info{
         border: 1px solid #3f4b4e;
     }
+
+    .tip{
+        border: 1px solid #2e483c;
+    }
+
+    .caution{
+        border: 1px solid #472f2f;
+    }
+
+    .details{
+        border: 1px solid #3f3f3f;
+    }
 }
   
 [data-theme='light'] {
@@ -38,6 +50,18 @@
     
     .info{
         border: 1px solid #afd4dc;
+    }
+
+    .tip{
+        border: 1px solid #afdcc6;
+    }
+
+    .caution{
+        border: 1px solid #dcafaf;
+    }
+
+    .details{
+        border: 1px solid #cdcdcd;
     }
 }
 
