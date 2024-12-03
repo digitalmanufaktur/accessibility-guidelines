@@ -1,6 +1,20 @@
-# Accessibility-Guidelines
+---
+home: true
+heroText: Accessibility-Guidelines
+tagline: Willkommen zu den Accessibility-Guidelines der digital.manufaktur GmbH.
+actions:
+ - text: Komponenten anzeigen
+   link: /component-pattern/readme.md
+   type: primary
+ - text: Allgemeine Guidelines
+   link: /guidelines/readme.md
+   type: secondary
+footer: MIT Lizenziert | Copyright © 2024-heute digital.manufaktur GmbH
+---
 
-Willkommen zu den Accessibility-Guidelines der digitalmanufaktur. Diese Dokumentation dient als umfassender Leitfaden für die Entwicklung barrierefreier und qualitativ hochwertiger E-Commerce-Komponenten und -Shops.
+
+## Einleitung
+Diese Dokumentation dient als umfassender Leitfaden für die Entwicklung barrierefreier und qualitativ hochwertiger E-Commerce-Komponenten und -Shops.
 
 ## Zweck dieser Guidelines
 
