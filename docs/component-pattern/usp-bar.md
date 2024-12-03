@@ -1,14 +1,17 @@
-# Benefit Bar
-Die Benefit-Bar ist eine wichtige Komponente in unserem Online-Shop, die Kunden über zentrale Vorteile und Services informiert. Sie wird prominent über der Navigation platziert und passt sich responsiv an verschiedene Bildschirmgrößen an.
+# USP Bar
+
+![Platzhalter für Grafik der USP-Bar][placeholder]
+
+Die USP Bar ist eine wichtige Komponente in unserem Online-Shop, die Kunden über zentrale Vorteile und Services informiert. Sie wird prominent über der Navigation platziert und passt sich responsiv an verschiedene Bildschirmgrößen an.
 
 **Inhalt dieser Seite:**
 [[toc]]
 
 ## Zweck und Herausforderungen
-Der Hauptzweck der Benefit-Bar ist es, wichtige Informationen wie Lieferbedingungen, Serviceleistungen oder Zertifizierungen auf einen Blick zu präsentieren. Die Herausforderung besteht darin, diese Informationen auf allen Geräten optimal darzustellen und dabei Barrierefreiheit zu gewährleisten.
+Der Hauptzweck der USP Bar ist es, wichtige Informationen wie Lieferbedingungen, Serviceleistungen oder Zertifizierungen auf einen Blick zu präsentieren. Die Herausforderung besteht darin, diese Informationen auf allen Geräten optimal darzustellen und dabei Barrierefreiheit zu gewährleisten.
 
 ## Struktur und Aufbau
-Die Benefit-Bar besteht aus folgenden Hauptelementen:
+Die USP Bar besteht aus folgenden Hauptelementen:
 1. Container mit semantischer Bedeutung
 2. Versteckte Überschrift für Screenreader
 3. Inhaltlicher Bereich (Slider auf kleineren Bildschirmen)
@@ -16,22 +19,22 @@ Die Benefit-Bar besteht aus folgenden Hauptelementen:
 
 **Hier ein Beispiel-Pattern für die grundlegende HTML-Struktur:**
 ```html
-<div class="benefit-bar" role="region" aria-label="Kundenvorteile">
+<div class="usp-bar" role="region" aria-label="Kundenvorteile">
   <h2 class="visually-hidden">Unsere Vorteile für Sie</h2>
   
-  <div class="benefit-bar-container">
+  <div class="usp-bar-container">
     <!-- Hier Slider, bzw. Benefits einsetzen -->
   </div>
   
   <!-- Hier ein Beispiel für die korrekte Struktur der Controls -->
-  <div class="benefit-bar-controls">
-    <button class="benefit-bar-button benefit-bar-button-prev" type="button" aria-label="Vorherige Vorteile">
+  <div class="usp-bar-controls">
+    <button class="usp-bar-button usp-bar-button-prev" type="button" aria-label="Vorherige Vorteile">
       <span class="visually-hidden">Vorherige</span>
       <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
         <!-- verwendetes SVG-Icon -->
       </svg>
     </button>
-    <button class="benefit-bar-button benefit-bar-button-next" type="button" aria-label="Nächste Vorteile">
+    <button class="usp-bar-button usp-bar-button-next" type="button" aria-label="Nächste Vorteile">
       <span class="visually-hidden">Nächste</span>
       <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
         <!-- verwendetes SVG-Icon -->
@@ -49,9 +52,9 @@ Das Beispiel soll die korrekte Verwendung von W3 ARIA-Rollen und korrekter HTML-
 
 
 **Erklärung:**
-- Die gesamte Benefit-Bar ist in einem `<div>` mit der Rolle `role="region"` und einem beschreibenden `aria-label="Kundenvorteile"` eingeschlossen. Dies hilft Screenreader-Nutzern, den Zweck dieses Bereichs zu verstehen.
+- Die gesamte USP Bar ist in einem `<div>` mit der Rolle `role="region"` und einem beschreibenden `aria-label="Kundenvorteile"` eingeschlossen. Dies hilft Screenreader-Nutzern, den Zweck dieses Bereichs zu verstehen.
 - Eine versteckte Überschrift (`<h2 class="visually-hidden">`) wird verwendet, um die Struktur der Seite für Screenreader-Nutzer zu verbessern, ohne das visuelle Design zu beeinflussen.
-- Der eigentliche Slider-Inhalt wird in einem separaten Container platziert. Hier würde der Splide-Slider eingefügt werden. (`.benefit-bar-container`)
+- Der eigentliche Slider-Inhalt wird in einem separaten Container platziert. Hier würde der Splide-Slider eingefügt werden. (`.usp-bar-container`)
 - Die Steuerelemente (Vor- und Zurück-Buttons) sind außerhalb des Slider-Containers platziert, um eine konsistente Positionierung zu gewährleisten.
 - Die Buttons haben aussagekräftige aria-label-Attribute (`aria-label="Vorherige Vorteile"`, `aria-label="Nächste Vorteile"`), die Screenreader-Nutzern den Zweck der Buttons erklären.
 - Die Pfeil-Icons sind als SVGs eingebunden, mit `aria-hidden="true"` und `focusable="false"`, um sie vor Screenreadern zu verbergen, da ihre Funktion bereits durch die Button-Labels beschrieben wird.
@@ -62,7 +65,7 @@ Das Beispiel soll die korrekte Verwendung von W3 ARIA-Rollen und korrekter HTML-
 - Tablet/schmale Layouts: 2 Benefits werden gleichzeitig angezeigt, Slider-Funktionalität aktiviert (siehe Splide-Slider).
 - Smartphone: Nur 1 Benefit wird angezeigt, Slider-Funktionalität aktiviert.
 
-[Platzhalter für Grafik: Responsives Verhalten der Benefit-Bar]
+[Platzhalter für Grafik: Responsives Verhalten der USP Bar]
 
 ## Barrierefreiheit
 - Verwende semantisch korrekte HTML-Struktur.
@@ -74,17 +77,17 @@ Hier ist es wichtig, dass du die ARIA-Attribute korrekt gewählt sind. Für Scre
 - Stelle sicher, dass die Fokus-Reihenfolge logisch und den Erwartungen entsprechend funktioniert und dass alle interaktive Elemente deutlich sichtbare Fokus-States haben.
 - Achte auf ausreichende Kontrastverhältnisse zwischen den Elementen und ihrem Hintergrund (z.B. Text zu Button-Hintergrund oder Button zu Hintergrund der Section).
 ::: note
-Für das Checken der Kontrastverhältnisse kannst du den [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) nutzen.
+Für das Checken der Kontrastverhältnisse kannst du den [WebAIM Contrast Checker][contrast-checker] nutzen.
 Wir streben **WCAG 2.1 AA** Standard an.
 :::
 - Achte auf Textalternativen für SVG-Icons und Grafiken.
 
 ## dmf Best Practices
-- Verwende den [Splide-Slider](https://splidejs.com/) für optimale Barrierefreiheit.
-- Implementiere in der Benefit-Bar wenn nicht anders gewünscht eine Fade-Transition mit 0.2s Dauer für subtile Übergänge. Die Anzeigedauer eines Slides soll 5s betragen.
+- Verwende den [Splide-Slider][splide] für optimale Barrierefreiheit.
+- Implementiere in der USP Bar wenn nicht anders gewünscht eine Fade-Transition mit 0.2s Dauer für subtile Übergänge. Die Anzeigedauer eines Slides soll 5s betragen.
 - Setze eine Mindesthöhe und -breite für Touch-Targets.
 - Wenn nicht anders gewünscht begrenze den Text auf maximal zwei Zeilen, danach Ellipsis mit Tooltip.
-- Pausiere den Slider bei Tastatur-Fokus (natives Verhalten des [Splide-Slider](https://splidejs.com/))
+- Pausiere den Slider bei Tastatur-Fokus (natives Verhalten des [Splide-Slider][splide])
 
 ## Checkliste für Entwickler
 - [X] HTML-Struktur entspricht dem empfohlenen Pattern
