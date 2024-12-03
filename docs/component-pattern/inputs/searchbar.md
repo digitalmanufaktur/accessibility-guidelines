@@ -304,6 +304,12 @@ Falsche ARIA-Attribute können die Nutzererfahrung verschlechtern. Teste die Imp
 
 <br>
 
+::: info
+Gerne darfst du aktiv zur Verbesserung dieses Lösungsansatzes beitragen. Wenn du Vorschläge oder Optimierungen hast, teile sie bitte mit dem entsprechenden Ansprechpartner.
+:::
+
+<br>
+
 **📋 Weitere To-Dos für die Zukunft:**
 ::: details
 Weitere Komponenten/Bestandteile, die zukünftig separat dokumentiert werden sollten:

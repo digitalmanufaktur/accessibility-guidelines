@@ -3,6 +3,10 @@
     --vp-c-bg: #F2F0EE;
     --vp-c-accent-bg: #3333FF;
     --vp-c-accent-hover: #4274FF;
+    .vp-hero-action-button.secondary:hover {
+        color: var(--vp-c-accent-hover);
+        border-color: var(--vp-c-accent-hover);
+      }
 }
 
 [data-theme='dark'] {
