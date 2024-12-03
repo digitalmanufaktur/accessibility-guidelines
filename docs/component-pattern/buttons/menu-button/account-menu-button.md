@@ -1,5 +1,6 @@
 # Account Menu Button (B2B)
-**[Platzhalter für Grafik: Responsives Verhalten der Benefit-Bar]**<br><br>
+
+![Platzhalter für Grafik: Responsives Verhalten der Benefit-Bar][placeholder]
 
 Der Account Menu Button ist eine zentrale Komponente für die Nutzerverwaltung, die den aktuellen Kontext des angemeldeten Benutzers anzeigt und Zugriff auf kontobezogene Funktionen ermöglicht.
 

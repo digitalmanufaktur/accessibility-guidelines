@@ -2,6 +2,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance"
+import injectAssetsPlugin from './plugins/inject-assets.js'
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -18,22 +19,17 @@ export default defineUserConfig({
         text: 'Komponenten', 
         link: '/component-pattern/',
         children: [
-          '/component-pattern/benefit-bar.md',
+          '/component-pattern/usp-bar.md',
           '/component-pattern/buttons/readme.md',
-          '/component-pattern/carousels.md',
-          '/component-pattern/forms.md',
-          '/component-pattern/menus.md',
-          '/component-pattern/product-box.md',
-          '/component-pattern/tabs.md'
+          '/component-pattern/inputs/readme.md',
         ]
       },
       { 
         text: 'Guidelines', 
         link: '/guidelines/',
         children: [
-          '/guidelines/accessibility.md',
-          '/guidelines/best-practices.md',
-          '/guidelines/bfsg.md'
+          '/guidelines/bfsg.md',
+          '/guidelines/wai-aria.md'
         ]
       },
       { text: 'Beitragen', link: '/contribute.md' }
@@ -54,7 +50,7 @@ export default defineUserConfig({
           collapsible: true,
           children: [
             '/component-pattern/readme.md',
-            '/component-pattern/benefit-bar.md',
+            '/component-pattern/usp-bar.md',
             { 
               text: 'Buttons', 
               link: '/component-pattern/buttons/readme.md',
@@ -63,11 +59,14 @@ export default defineUserConfig({
                 '/component-pattern/buttons/menu-button/account-menu-button.md'
               ]
             },
-            '/component-pattern/carousels.md',
-            '/component-pattern/forms.md',
-            '/component-pattern/menus.md',
-            '/component-pattern/product-box.md',
-            '/component-pattern/tabs.md'
+            { 
+              text: 'Inputs', 
+              link: '/component-pattern/inputs/readme.md',
+              collapsible: true,
+              children: [
+                '/component-pattern/inputs/searchbar.md'
+              ]
+            }
           ]
         }
       ],
@@ -76,10 +75,8 @@ export default defineUserConfig({
           text: 'Guidelines',
           collapsible: true,
           children: [
-            '/guidelines/readme.md',
-            '/guidelines/accessibility.md',
-            '/guidelines/best-practices.md',
-            '/guidelines/bfsg.md'
+            '/guidelines/bfsg.md',
+            '/guidelines/wai-aria.md'
           ]
         }
       ]
@@ -99,6 +96,7 @@ export default defineUserConfig({
     mdEnhancePlugin({
       tasklist: true,
     }),
+    injectAssetsPlugin()
   ],
   head: [
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
