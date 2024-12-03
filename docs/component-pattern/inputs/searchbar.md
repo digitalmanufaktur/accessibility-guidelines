@@ -184,12 +184,18 @@ Bei Verwendung anderer technischer Grundlagen (z.B. PWA mit Hubble) muss die Str
   - Verweist auf die ID des aktiven Suchergebnisses
 
 ### Screenreader-Ankündigungen
-- Suchfeld: "Produktsuche, Suchfeld"
-- Bei Öffnen der Ergebnisse: "5 Suchergebnisse verfügbar"
-- Bei Navigation: "Produktname, X Euro, Ergebnis 1 von 5"
-- Bei Schließen: "Suchergebnisse geschlossen"
-- Bei keinen Ergebnissen: "Keine Suchergebnisse gefunden"
-- Bei Hover/Fokus: "Produktname auswählen, X Euro"
+- **Suchfeld:**  
+ 🔉 _"Produktsuche, Suchfeld"_
+- **Bei Öffnen der Ergebnisse:**  
+ 🔉 _"5 Suchergebnisse verfügbar"_
+- **Bei Navigation:**  
+ 🔉 _"Produktname, X Euro, Ergebnis 1 von 5"_
+- **Bei Schließen:**  
+ 🔉 _"Suchergebnisse geschlossen"_
+- **Bei keinen Ergebnissen:**  
+ 🔉 _"Keine Suchergebnisse gefunden"_
+- **Bei Hover/Fokus:**  
+ 🔉 _"Produktname auswählen, X Euro"_
 
 ## JavaScript-Verhalten (Optionales Beispiel)
 
@@ -256,7 +262,7 @@ Falsche ARIA-Attribute können die Nutzererfahrung verschlechtern. Teste die Imp
 - Klare Fehlerbehandlung
 - Aussagekräftige Platzhaltertexte
 
-### UI-Patterns
+### UI-Pattern
 - Suchfeld immer mit Such-Icon kennzeichnen
 - Platziere den Schließen-Button für das Suchergebnis-Popup innerhalb des Ergebnisbereichs
 - Hover-States für Suchergebnisse mit subtiler Hintergrundfarbe
@@ -271,7 +277,7 @@ Falsche ARIA-Attribute können die Nutzererfahrung verschlechtern. Teste die Imp
 - [x] Screenreader-Test durchgeführt
 - [x] Kontrastverhältnisse geprüft
 - [x] Touch-Targets ausreichend groß
-- [x] Fehlermeldungen implementiert
+- [x] Fehlermeldungen implementiert (falls nötig)
 - [x] Live-Region für Statusänderungen
 
 ## Testing-Checkliste
