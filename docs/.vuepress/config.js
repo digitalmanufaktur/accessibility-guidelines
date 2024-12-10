@@ -60,7 +60,7 @@ export default defineUserConfig({
                 '/component-pattern/buttons/icon-button.md',
                 '/component-pattern/buttons/text-icon-button.md',
                 '/component-pattern/buttons/menu-button.md',
-                '/component-pattern/buttons/menu-button.md',
+                '/component-pattern/buttons/account-menu-button.md',
                 '/component-pattern/buttons/status-buttons.md',
               ]
             },
