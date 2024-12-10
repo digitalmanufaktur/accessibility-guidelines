@@ -1,8 +1,12 @@
-# Account Menu Button (B2B)
+# Account Menu Button (TradelinePro, B2B)
+
+::: info
+**Achtung:** Diese Seite bezieht sich ausschließlich auf die Account-Menu-Button Komponente, welche durch das TradelinePro Enterprise-Plugin aktiviert wird.
+:::
 
 ![Platzhalter für Grafik: Responsives Verhalten der Benefit-Bar][placeholder]
 
-Der Account Menu Button ist eine zentrale Komponente für die Nutzerverwaltung, die den aktuellen Kontext des angemeldeten Benutzers anzeigt und Zugriff auf kontobezogene Funktionen ermöglicht.
+Der Account Menu Button ist eine zentrale, Tradeline-Pro spezifische Komponente für die Nutzerverwaltung, die den aktuellen Kontext des angemeldeten Benutzers anzeigt und Zugriff auf kontobezogene Funktionen ermöglicht.
 
 **Inhalt dieser Seite:**
 [[toc]]
@@ -51,7 +55,7 @@ Der Button besteht aus folgenden Hauptelementen:
 ```
 
 ::: note
-Die Klassennamen dienen der Veranschaulichung der Struktur. Das Pattern demonstriert die korrekte Verwendung von ARIA-Attributen für optimale Accessibility.
+Die Klassennamen und Demo-Daten dienen der Veranschaulichung der Struktur. Das Pattern demonstriert die korrekte Verwendung von ARIA-Attributen für optimale Accessibility.
 :::
 
 **Erklärung:**

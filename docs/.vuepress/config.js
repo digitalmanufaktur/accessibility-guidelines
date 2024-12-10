@@ -19,9 +19,10 @@ export default defineUserConfig({
         text: 'Komponenten', 
         link: '/component-pattern/',
         children: [
-          '/component-pattern/usp-bar.md',
+          '/component-pattern/readme.md',
           '/component-pattern/buttons/readme.md',
           '/component-pattern/inputs/readme.md',
+          '/component-pattern/usp-bar.md',
         ]
       },
       { 
@@ -50,13 +51,17 @@ export default defineUserConfig({
           collapsible: true,
           children: [
             '/component-pattern/readme.md',
-            '/component-pattern/usp-bar.md',
             { 
               text: 'Buttons', 
               link: '/component-pattern/buttons/readme.md',
               collapsible: true,
               children: [
-                '/component-pattern/buttons/menu-button/account-menu-button.md'
+                '/component-pattern/buttons/text-button.md',
+                '/component-pattern/buttons/icon-button.md',
+                '/component-pattern/buttons/text-icon-button.md',
+                '/component-pattern/buttons/menu-button.md',
+                '/component-pattern/buttons/menu-button.md',
+                '/component-pattern/buttons/status-buttons.md',
               ]
             },
             { 
@@ -66,7 +71,8 @@ export default defineUserConfig({
               children: [
                 '/component-pattern/inputs/searchbar.md'
               ]
-            }
+            },
+            '/component-pattern/usp-bar.md',
           ]
         }
       ],
