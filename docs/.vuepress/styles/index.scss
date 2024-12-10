@@ -3,6 +3,8 @@
     --vp-c-bg: #F2F0EE;
     --vp-c-accent-bg: #3333FF;
     --vp-c-accent-hover: #4274FF;
+    --tab-c-bg-nav: #d7d7d7;
+    --vp-c-control-hover: rgba(118, 105, 91, 0.16);
     .vp-hero-action-button.secondary:hover {
         color: var(--vp-c-accent-hover);
         border-color: var(--vp-c-accent-hover);
@@ -121,4 +123,8 @@ kbd {
     line-height: 1;
     padding: 8px 12px;
     white-space: nowrap;
+  }
+
+  .vp-tab-nav{
+    padding: .75em 1em;
   }

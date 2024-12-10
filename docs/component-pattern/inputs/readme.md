@@ -1,2 +1,2 @@
-# Input-Compontents
+# Inputs
 
