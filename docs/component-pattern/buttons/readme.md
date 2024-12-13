@@ -9,17 +9,22 @@ Buttons sind essenzielle interaktive Elemente jeder Benutzeroberfläche. Dieses 
 
 ### Standard Buttons
 
-[Text Button:](./text-button.md) Für klare, eindeutige Aktionen
+[Text Button:](./text-button.md)  
+Für klare, eindeutige Aktionen
 
-[Icon Button:](./icon-button.md) Für platzsparende, universelle Aktionen
+[Icon Button:](./icon-button.md)  
+Für platzsparende, universelle Aktionen
 
-[Text + Icon Button:](./text-icon-button.md) Kombination für verstärkte visuelle Bedeutung
+[Text + Icon Button:](./text-icon-button.md)  
+Kombination für verstärkte visuelle Bedeutung
 
 ### Spezielle Button-Typen
 
-[Menu Button:](./menu-button.md) Für Dropdown-Menüs und Navigation
+[Menu Button:](./menu-button.md)  
+Für Dropdown-Menüs und Navigation
 
-[Status Button:](./status-button.md) Für Zustandsänderungen und Feedback
+[Status Button:](./status-button.md)  
+Für Zustandsänderungen und Feedback
 
 ## Grundlegende Anforderungen
 

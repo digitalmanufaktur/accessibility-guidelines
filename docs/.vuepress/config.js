@@ -17,13 +17,7 @@ export default defineUserConfig({
       { text: 'Start', link: '/' },
       { 
         text: 'Komponenten', 
-        link: '/component-pattern/',
-        children: [
-          '/component-pattern/readme.md',
-          '/component-pattern/buttons/readme.md',
-          '/component-pattern/inputs/readme.md',
-          '/component-pattern/usp-bar.md',
-        ]
+        link: '/component-pattern/'
       },
       { 
         text: 'Guidelines', 
@@ -62,6 +56,17 @@ export default defineUserConfig({
                 '/component-pattern/buttons/menu-button.md',
                 '/component-pattern/buttons/account-menu-button.md',
                 '/component-pattern/buttons/status-buttons.md',
+              ]
+            },
+            {
+              text: 'Bilder',
+              link: '/component-pattern/images/readme.md',
+              collapsible: true,
+              children: [
+                '/component-pattern/images/informative-images.md',
+                '/component-pattern/images/decorative-images.md',
+                '/component-pattern/images/functional-images.md',
+                '/component-pattern/images/groups-of-images.md',
               ]
             },
             { 
